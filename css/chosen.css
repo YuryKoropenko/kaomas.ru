@@ -57,7 +57,7 @@
   display: block;
   width: 31px;
   height: 15px;
-  background: url("images/form.png") 0 -122px no-repeat;
+  background: url("../images/form.png") 0 -122px no-repeat;
   font-size: 1px;
 }
 
@@ -73,7 +73,7 @@
   height: 100%;
 }
 
-.chosen-container-single .chosen-single div b {display: block; width: 100%; height: 15px; background: url("images/form.png") 0 -122px no-repeat;}
+.chosen-container-single .chosen-single div b {display: block; width: 100%; height: 15px; background: url("../images/form.png") 0 -122px no-repeat;}
 
 .chosen-container-single .chosen-search {
   position: relative;

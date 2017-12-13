@@ -566,7 +566,7 @@ body {margin:0; padding:0; height:100%;}
 .wrap_content .nav .menu ul li .no_level:hover > div:nth-child(1) {background-position: 0 -70px;}
 
 .wrap_content .nav .menu ul li .level_more {display: none;}
-.wrap_content .nav .menu ul li .level_more {position: absolute; top: 0; left: 175px; padding: 0 30px 15px 30px; width: 1025px; background: #e9e9e9; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; z-index: 90000;}
+.wrap_content .nav .menu ul li .level_more {position: absolute; top: 350px; left: 175px; padding: 0 30px 15px 30px; width: 1025px; background: #e9e9e9; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; z-index: 90000;}
 
 
 
@@ -654,7 +654,7 @@ box-sizing: border-box;
 
 
 .broadcrumb {display: table; margin: 25px 0 25px 20px; height: 16px; font-size: 13px; color: #666; line-height: 16px;}
-.broadcrumb > div {display: table-cell; vertical-align: top;}
+.broadcrumb > div {display: inline-block; vertical-align: top;}
 .broadcrumb > div:nth-child(1) {width: 17px;}
 .broadcrumb > div:nth-child(2) {padding-left: 8px;}
 .broadcrumb span {vertical-align: top;}
@@ -1606,6 +1606,18 @@ border:2px solid #24ab00;
     height: 20px;
     background: url(../images/delete.png) 0 0 no-repeat;
     cursor: pointer;
+}
+.my_one_click {
+	display: none;
+	position: absolute;
+	z-index: 1000;
+	border: 2px solid #24ab00;
+	padding: 10px;
+	font-size: 14px;
+	background: #fff;
+	max-width: 100%;
+	width: 490px;
+	margin-left: 20px;
 }
 .my_e
 {
