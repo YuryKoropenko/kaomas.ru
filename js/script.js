@@ -1,4 +1,4 @@
-//МЕню
+//ГЊГ…Г­Гѕ
 $(function(){
 	$('.level_more').hide();
 	    $menu = $('.level_1');
@@ -92,7 +92,7 @@ $(function(){
 
 
 
-//Плавующее меню. блок
+//ГЏГ«Г ГўГіГѕГ№ГҐГҐ Г¬ГҐГ­Гѕ. ГЎГ«Г®ГЄ
 $(function(){
     var elem = $('#left_nav');
     var size = $(document).width();
@@ -115,16 +115,16 @@ $(function(){
 
 
 
-//Плавующий блок характеристик
+//ГЏГ«Г ГўГіГѕГ№ГЁГ© ГЎГ«Г®ГЄ ГµГ Г°Г ГЄГІГҐГ°ГЁГ±ГІГЁГЄ
 $(function(){
 	if ($("#floating_block").length) {
-		var objToStick = $("#floating_block"); //Получаем нужный объект
-	    var topOfObjToStick = $(objToStick).offset().top; //Получаем начальное расположение нашего блока
+		var objToStick = $("#floating_block"); //ГЏГ®Г«ГіГ·Г ГҐГ¬ Г­ГіГ¦Г­Г»Г© Г®ГЎГєГҐГЄГІ
+	    var topOfObjToStick = $(objToStick).offset().top; //ГЏГ®Г«ГіГ·Г ГҐГ¬ Г­Г Г·Г Г«ГјГ­Г®ГҐ Г°Г Г±ГЇГ®Г«Г®Г¦ГҐГ­ГЁГҐ Г­Г ГёГҐГЈГ® ГЎГ«Г®ГЄГ 
     	var WidthobjToStick = $(objToStick).innerWidth();
 	
     	$(window).scroll(function () {
-        	var windowScroll = $(window).scrollTop(); //Получаем величину, показывающую на сколько прокручено окно
-        		if (windowScroll > topOfObjToStick) { // Если прокрутили больше, чем расстояние до блока, то приклеиваем его
+        	var windowScroll = $(window).scrollTop(); //ГЏГ®Г«ГіГ·Г ГҐГ¬ ГўГҐГ«ГЁГ·ГЁГ­Гі, ГЇГ®ГЄГ Г§Г»ГўГ ГѕГ№ГіГѕ Г­Г  Г±ГЄГ®Г«ГјГЄГ® ГЇГ°Г®ГЄГ°ГіГ·ГҐГ­Г® Г®ГЄГ­Г®
+        		if (windowScroll > topOfObjToStick) { // Г…Г±Г«ГЁ ГЇГ°Г®ГЄГ°ГіГІГЁГ«ГЁ ГЎГ®Г«ГјГёГҐ, Г·ГҐГ¬ Г°Г Г±Г±ГІГ®ГїГ­ГЁГҐ Г¤Г® ГЎГ«Г®ГЄГ , ГІГ® ГЇГ°ГЁГЄГ«ГҐГЁГўГ ГҐГ¬ ГҐГЈГ®
             		$(objToStick).addClass("fixedBlock");
 					$(".fixedBlock").css('width', WidthobjToStick + 'px');
 		        } else {
@@ -237,15 +237,6 @@ $(document).ready(function() {
 	});
 
 
-	$(".slider_rew").owlCarousel({
-		loop:true,
-		autoplay: false,
-    	margin: 0,
-	    nav: false,
-   	    items:1
-	});
-
-
 
 
 	$(".slider_sertificat").owlCarousel({
@@ -276,18 +267,30 @@ $(document).ready(function() {
 	});
 
 
-
+/*РќРѕРІС‹Рµ РІС‹Р·РѕРІС‹ START*/
 
 
 	$(".slider_action").owlCarousel({
-		loop:true,
+		touchDrag: false,
+		mouseDrag: false,
 		autoplay: false,
-    	margin: 0,
-	    nav: false,
-  	    items:1
+		margin: 0,
+		nav: false,
+		items:1,
+		singleItem: true
 	});
 
+	$(".slider_rew").owlCarousel({
+		touchDrag: false,
+		mouseDrag: false,
+		autoplay: false,
+		margin: 0,
+		nav: false,
+		items:1,
+		singleItem: true
+	});
 
+/*РќРѕРІС‹Рµ РІС‹Р·РѕРІС‹ END*/
 
 
 	$(".faq_open").click(function(){
