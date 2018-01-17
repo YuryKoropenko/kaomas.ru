@@ -280,6 +280,16 @@ $(document).ready(function() {
 		singleItem: true
 	});
 
+	$('.color_block_3-slider').owlCarousel({
+		touchDrag: false,
+		mouseDrag: false,
+		autoplay: false,
+		margin: 0,
+		nav: false,
+		items:1,
+		singleItem: true
+	});
+
 	$(".slider_rew").owlCarousel({
 		touchDrag: false,
 		mouseDrag: false,
